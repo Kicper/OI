@@ -11,7 +11,7 @@ int main()
     ifstream infile;
     ofstream outfile;
     infile.open("pla10b.in", ios::in);
-    outfile.open("result.out", ios::out);
+    outfile.open("pla10b.out", ios::out);
     infile>>n;
     for(int i=0; i<n; ++i) {
         infile>>temp;
