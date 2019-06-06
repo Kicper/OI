@@ -10,8 +10,8 @@ int main()
 
     ifstream infile;
     ofstream outfile;
-    infile.open("pla10b.in", ios::in);
-    outfile.open("result.out", ios::out);
+    infile.open("pla1ocen.in", ios::in);
+    outfile.open("pla1ocen.out", ios::out);
     infile>>n;
     for(int i=0; i<n; ++i) {
         infile>>temp;
