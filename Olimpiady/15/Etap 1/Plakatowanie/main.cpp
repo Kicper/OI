@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 
 using namespace std;
 
@@ -8,14 +7,10 @@ int main()
     int arr[250002], pointer=1, posters=0, n, temp;
     arr[0]=0;
 
-    ifstream infile;
-    ofstream outfile;
-    infile.open("pla1ocen.in", ios::in);
-    outfile.open("pla1ocen.out", ios::out);
-    infile>>n;
+    cin>>n;
     for(int i=0; i<n; ++i) {
-        infile>>temp;
-        infile>>temp;
+        cin>>temp;
+        cin>>temp;
         if(arr[pointer-1] < temp) {
             posters++;
             arr[pointer]=temp;
@@ -33,9 +28,7 @@ int main()
             }
         }
     }
-    outfile<<posters;
-    infile.close();
-    outfile.close();
+    cout<<posters;
 
     return 0;
 }
